@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#140914" />
+  <meta name="description" content="A romantic surprise website for Girlfriend's Day." />
+  <title>For Sinato Samantha Moses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Parisienne&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+
+  <section class="intro" id="intro">
+    <div class="intro-backdrop" aria-hidden="true"></div>
+    <div class="intro-copy">
+      <p class="eyebrow">Girlfriend's Day surprise</p>
+      <h1>Touch the envelope</h1>
+      <p class="intro-text">
+        A private little gift built for Sinato with music, memories, faith, and a softer kind of magic🤍🤍.
+      </p>
+    </div>
+
+    <button class="envelope-shell" id="openEnvelope" type="button" aria-label="Open the envelope">
+      <span class="envelope-glow" aria-hidden="true"></span>
+      <span class="envelope" aria-hidden="true">
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-letter">
+          <span class="letter-title">For you</span>
+          <span class="letter-line short"></span>
+          <span class="letter-line"></span>
+          <span class="letter-line"></span>
+        </span>
+      </span>
+      <span class="envelope-hint">Tap to open</span>
+    </button>
+
+    <p class="intro-note">The music starts as soon as the note opens.</p>
+  </section>
+
+  <main class="app" id="app" aria-hidden="true">
+    <header class="topbar">
+      <div>
+        <p class="topbar-label">For Sinato Samantha Moses</p>
+        <h2>Made with love, prayer, and a little code</h2>
+      </div>
+
+      <div class="progress" aria-label="Page progress">
+        <button class="dot is-active" data-step-target="0" aria-label="Go to part 1"></button>
+        <button class="dot" data-step-target="1" aria-label="Go to part 2"></button>
+        <button class="dot" data-step-target="2" aria-label="Go to part 3"></button>
+        <button class="dot" data-step-target="3" aria-label="Go to part 4"></button>
+      </div>
+    </header>
+
+    <section class="screen is-active" data-step="0">
+      <div class="panel hero-panel glass">
+        <div class="hero-copy">
+          <p class="section-tag">Part 1 • A note just for you</p>
+          <h3>Happy Girlfriend’s Day, Sinato.</h3>
+          <p class="lead">
+            You carry yourself with faith, grace, and purpose. That matters. It shows in the way you study,
+            the way you care, and the way you keep moving forward even when the work is heavy.
+          </p>
+          <p class="lead">
+            You are becoming the kind of doctor people will trust calm hands, a sharp mind, and a heart that
+            remembers who you are in Christ.
+          </p>
+        </div>
+
+        <div class="card-row">
+          <article class="mini-card">
+            <span>Faith</span>
+            <p>A heart anchored in God.</p>
+          </article>
+          <article class="mini-card">
+            <span>Medicine</span>
+            <p>Focused, steady, and built for healing.</p>
+          </article>
+          <article class="mini-card">
+            <span>Us</span>
+            <p>A small digital gift with real feelings maybe coz m broke.</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button class="primary-btn" data-next-step>Open the memories</button>
+          <button class="ghost-btn" data-step-target="3">Skip to the ending</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-step="1">
+      <div class="panel glass">
+        <p class="section-tag">Part 2 • Four pictures, softly revealed</p>
+        <h3>Little moments we can keep They could be more but you dont like photos.</h3>
+        <p class="lead">
+          
+        </p>
+
+        <div class="memory-grid" id="photoStage" aria-live="polite">
+          <article class="memory-card is-visible" data-photo-index="0">
+            <div class="memory-media">
+              <img src="assets/photo-1.jpg" alt="Memory photo 1" onerror="this.closest('.memory-card').classList.add('missing')" />
+            </div>
+            <div class="memory-caption">
+              <strong>Photo 1</strong>
+              <span>Youre the kind of woman that'll keep my household firmly in Christ .</span>
+            </div>
+          </article>
+          <article class="memory-card" data-photo-index="1">
+            <div class="memory-media">
+              <img src="assets/photo-2.jpeg" alt="Memory photo 2" onerror="this.closest('.memory-card').classList.add('missing')" />
+            </div>
+            <div class="memory-caption">
+              <strong>Photo 2</strong>
+              <span>A little proof that time can be sweet and youre funny .</span>
+            </div>
+          </article>
+          <article class="memory-card" data-photo-index="2">
+            <div class="memory-media">
+              <img src="assets/photo-3.jpeg" alt="Memory photo 3" onerror="this.closest('.memory-card').classList.add('missing')" />
+            </div>
+            <div class="memory-caption">
+              <strong>Photo 3</strong>
+              <span>Another frame I want to keep forever i might actually frame this picture .</span>
+            </div>
+          </article>
+          <article class="memory-card" data-photo-index="3">
+            <div class="memory-media">
+              <img src="assets/photo-4.jpeg" alt="Memory photo 4" onerror="this.closest('.memory-card').classList.add('missing')" />
+            </div>
+            <div class="memory-caption">
+              <strong>Photo 4</strong>
+              <span>And the last one, just as important coz its shows how shy youre towards a camera.</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button class="ghost-btn" data-prev-step>Back</button>
+          <button class="primary-btn" data-next-step>See the videos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-step="2">
+      <div class="panel glass">
+        <p class="section-tag">Part 3 • The moving memories</p>
+        <h3>Four videos, But honestly could have added more.</h3>
+        <p class="lead">
+          Spending time with you is the greatest gift I could ever ask for wish i could show how much i really love you🖤 .
+        </p>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <video controls playsinline preload="metadata">
+              <source src="assets/vid.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <div class="video-label">Wished we could go out more would't you agree Dora</div>
+          </article>
+          <article class="video-card">
+            <video controls playsinline preload="metadata">
+              <source src="assets/vid1.MP4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <div class="video-label">We should hangout more often it might be fun </div>
+          </article>
+          <article class="video-card">
+            <video controls playsinline preload="metadata">
+              <source src="assets/vid2.MP4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <div class="video-label">I need friends like this that can get you to capture your memories </div>
+          </article>
+          <article class="video-card">
+            <video controls playsinline preload="metadata">
+              <source src="assets/vid3.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+            <div class="video-label">This album will continue to grow with more moments shared together </div>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button class="ghost-btn" data-prev-step>Back</button>
+          <button class="primary-btn" data-next-step>Final note</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-step="3">
+      <div class="panel glass ending-panel">
+        <div>
+          <p class="section-tag">Part 4 • The ending</p>
+          <h3>May God guide every step ahead.</h3>
+          <p class="lead">
+            Keep being brilliant. Keep being gentle. Keep being you.
+            I hope this page feels like a warm hug, a smile, and a reminder that you are deeply valued and loved.
+          </p>
+          <p class="lead">
+            Happy Girlfriend’s Day, Sinato Samantha Moses.
+          </p>
+        </div>
+
+        <div class="signature-box">
+          <div class="signature-line"></div>
+          <p>Made for you with love from Nyakeh.</p>
+        </div>
+
+        <div class="actions">
+          <button class="ghost-btn" data-prev-step>Back</button>
+          <button class="primary-btn" id="replayBtn" type="button">Replay from the envelope</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
